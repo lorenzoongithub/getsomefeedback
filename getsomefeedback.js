@@ -109,7 +109,6 @@
       
       // This is the main logic to send the message to the feedback. 
       // a new script is created and asynchronously requested.
-      // in its 
       var script = document.createElement("script");
       script.src="do.not.ignore.feedback.js?name="+encodeURIComponent(name)+'&message='+encodeURIComponent(message); 
       document.body.appendChild(script);
@@ -127,4 +126,4 @@
    document.body.appendChild(divFeedback);
    document.body.appendChild(divDialog);
    document.body.appendChild(divThanks);
-})(this,this.document);
+})(this,this.document); // avoid polluting the global scope
