@@ -111,7 +111,7 @@
       // a new script is created and asynchronously requested.
       // in its 
       var script = document.createElement("script");
-      script.src="getfeedback404.js?name="+encodeURIComponent(name)+'&message='+encodeURIComponent(message); 
+      script.src="do.not.ignore.feedback.js?name="+encodeURIComponent(name)+'&message='+encodeURIComponent(message); 
       document.body.appendChild(script);
       
       // Displays the thank you message.

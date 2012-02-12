@@ -1,3 +1,4 @@
+
 DESCRIPTION
 ===========
 
@@ -7,12 +8,12 @@ getsomefeedback.js is the simplest javascript library to add a 'feedback' button
 USAGE
 =====
 
-Copy our script to your machine.
+Copy the script to your machine.
 Add the script at the bottom of your page
 
-<pre>
-&lt;script src="getsomefeedback.js&gt;&lt;/script&gt;
-</pre>
+
+    <script src="getsomefeedback.js></script>
+
 
 End of story. 
  
@@ -20,13 +21,16 @@ End of story.
 A 100% JAVASCRIPT SOLUTION: HOW DOES IT WORK ?
 ==============================================
 
-The script at the bottom of your page creates and display a 'feedback' button on. 
+getsomefeedback.js creates a feedback button at the bottom of the page. 
 The user clicks on it and a pop-up appears to enter his/her feedback.
 
-When 'submit feedback' is pressed a new http request is made to the hosting site - your website - passing all of the user's parameters.
+When 'submit' is pressed a new http request is made to the hosting site - your website - passing all of the data entered by the users.
 This is done via a well known technique known as dynamic script injection. 
 The http request returns nothing to the client (technically it fails silently with 404)  
 yet the 'feedback' data has now been written on your server's logs.  
+
+(Minor technical note: if you want to avoid http 404 you must create a an empty file called 'do-non-ignore-feedback.js')
+
 
 HOW DO I RETRIEVE FEEDBACK DATA ?
 =================================
@@ -38,9 +42,7 @@ node.js ?
 google app engine ?
 
 The only thing that is expected is your ability to crawl - whether manually or in an automated fashion - your servers logs. 
-Search for 'do-not-ignore-feedback' and you will find all of the users' comments. 
-
-Minor technical note: if you want to avoid http 404 you must create a an empty file 'do-non-ignore-feedback.js'
+Search for 'do.not.ignore.feedback.js' and you will find all of the users' comments. 
 
 
 HOW DO I CUSTOMIZE IT ? 
